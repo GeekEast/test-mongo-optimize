@@ -1,0 +1,18 @@
+{
+  "name": "mongo-optimize",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "casual": "^1.6.2",
+    "mongoose": "^5.12.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7",
+    "typescript": "^4.2.3"
+  },
+  "scripts": {
+    "initd": "node src/init.js",
+    "start": "nodemon src/index.js"
+  }
+}
