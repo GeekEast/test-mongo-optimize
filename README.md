@@ -25,6 +25,7 @@ mongo uri: mongodb://readandwrite:readandwrite@localhost:27017/firstdb
 - use `select()` as much as you can
 - `lean()` is much faster
 - use `index` as much as you can, but only create index for necessary fields
+- since write operation will update index, it's better to split write and read operation
 - best case is that you should use `select()` and `lean()` together
 
 ### References
