@@ -16,6 +16,11 @@ yarn initd # init data, might take some time
 yarn start # start testing
 ```
 
+### Mongo URI
+```sh
+mongo uri: mongodb://readandwrite:readandwrite@localhost:27017/firstdb
+```
+
 ### Conclusion
 - use `select()` as much as you can
 - `lean()` is much faster
