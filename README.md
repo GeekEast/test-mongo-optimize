@@ -1,7 +1,6 @@
 ### Build Stack
 ```shell
-docker-compose up -d # detach
-docker-compose down
+docker-compose up -d
 ```
 ### Optimize Approaches
 - use `lean` queries for GET operations
@@ -9,11 +8,11 @@ docker-compose down
 - favour using `.aggregate()` instead of `.populate()`
 - use `.select()` to select specific properties to return
 - run `Promise.all()` to run parallel operations (if possible), `insertMany()` and `bulkWrite()` is even better
-- cache/reuse mongoose connections
+- cache/reuse `mongoose` connections
 
 ### Start Test
 ```sh
-yarn initd # init data
+yarn initd # init data, might take some time
 yarn start # start testing
 ```
 
