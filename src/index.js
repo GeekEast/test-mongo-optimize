@@ -15,7 +15,6 @@ const { User, UserWithIndex } = require('./schema/user');
     );
 
     const query = { age: { $gt: 22 } };
-    // const query = { favoriteFruit: 'potato' }
 
     console.time('query');
     await User.find(query);
